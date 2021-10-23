@@ -1,8 +1,9 @@
 // colors
-$purple:rgb(91, 39, 212);
+$purple:#5b27d4;
 $light_purple:lighten($purple,10%);
 $darked_purple:darken($purple,10%);
 $very_darked_purple:darken($purple,40%);
+$blanc_casse:rgb(250, 250, 250);
 
 // border-radius
 $light_radius:5px;
@@ -13,6 +14,11 @@ $strong_radius:50px;
 $p1:1em;
 $p2:2em;
 $p3:3em;
+
+// margin
+$m1:1em;
+$m2:2em;
+$m3:3em;
 
 // font_size
 $font_lg:3em;

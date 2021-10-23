@@ -160,3 +160,98 @@ header {
         }
     }
 }
+
+// SECTION SERVICES
+
+section.services{
+    min-height: 50vh;
+    text-align: center;
+    position: relative;
+    padding: $p1 0;
+    background-color:$blanc_casse;
+
+    h1{
+        font-size: $font_lg;
+        margin: $m1;
+    }
+
+    hr{
+        height:2px;
+        width: 10%;
+        background-image:linear-gradient(35deg,#bb9eff,rgb(62, 62, 255));
+        position: absolute;
+        border: none;
+
+        &:first-of-type{
+            right:48.5%;
+            top: 23%;
+        }
+        
+        &:nth-of-type(2){
+            left:48.5%;
+            top: 26%;
+        }
+    }
+
+    & > p:first-of-type{
+        margin: $m1/1.5 auto $m3;
+        width: 40%;
+        text-align: center;
+        font-size: $font_lg / 2.75;
+        font-weight: 500;
+    }
+
+    .card_container{
+
+        display: grid;
+        grid-template-columns: 5vw repeat(3,1fr) 5vw;
+        column-gap: $m1;
+        .card{
+            border-radius: $light_radius;
+            padding: $p1 $p1;
+            margin: 1vh 0;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            box-shadow: 1px 1px 5px 1px lightgray;
+            transition:all .25s linear;
+            background-color: white;
+            min-height: 40vh;
+            max-height: 45vh;
+
+            &:hover{
+                transform:scale(1.05);
+            }
+
+            &:hover h2, &:hover a{
+                color: $purple;
+            }
+
+            // To place the first card element (the others follows the page flow that's why we don't specify the grid column for the 2nd and 3rd card)
+            &:first-of-type{
+                grid-column:2/3;
+            }
+        
+            h2{
+                margin:$m1 0 $m1/5;
+            }
+
+            p{
+                text-align: left;
+                margin: $m1/2 0 $m2;
+                font-size: $font_lg / 3.33;
+                font-weight: 400;
+            }
+
+            a{
+                text-decoration: none;
+                font-weight: 500;
+
+                i{
+                    font-size:$font_lg / 4;
+                }
+            }
+
+        }
+    }
+}
