@@ -6,7 +6,7 @@ header button { transition: all .1s linear; }
 
 header button:hover { transform: scale(0.975); cursor: pointer; }
 
-header nav { height: 17.5vh; display: flex; justify-content: space-around; }
+header nav { height: 17.5vh; display: flex; justify-content: space-around; background-color: #fafafa; }
 
 header nav :is(.logo_container, .links_container, .login_button_container) { display: flex; align-items: center; }
 
@@ -46,9 +46,9 @@ header section.header .content_section .btn_call_to_action_container button:firs
 
 header section.header .content_section .btn_call_to_action_container button:nth-of-type(2) { background-color: #5b27d4; color: #ffe8bb; }
 
-header section.header .image_section { grid-column: 3/4; grid-row: 1/6; display: flex; justify-content: center; align-items: flex-end; }
+header section.header .image_section { grid-column: 3/4; grid-row: 1/6; display: flex; justify-content: center; align-items: flex-end; background-image: url("../Images/header_background.jpg"); background-size: cover; }
 
-header section.header .image_section img { height: 90%; filter: drop-shadow(-5px -7.5px #491fa9); }
+header section.header .image_section img { height: 90%; filter: drop-shadow(-2.5px -5px #020a50); }
 
 section.services { min-height: 50vh; text-align: center; position: relative; padding: 1em 0; background-color: #fafafa; }
 

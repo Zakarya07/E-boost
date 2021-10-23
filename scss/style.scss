@@ -27,6 +27,7 @@ header {
         height: 17.5vh;
         display: flex;
         justify-content: space-around;
+        background-color:$blanc_casse;
 
         :is(.logo_container, .links_container, .login_button_container) {
             display: flex;
@@ -84,8 +85,7 @@ header {
         display: grid;
         grid-template-columns: 5vw 1fr 1fr 5vw;
         grid-template-rows:10% 10% 1fr 10% 10%;
-
-
+    
         button{
             border-radius:$strong_radius/1.1;
             padding:$p1/2 $p1;
@@ -99,6 +99,7 @@ header {
             display: flex;
             justify-content: space-between;
             flex-direction: column;
+            
 
             & > button:first-of-type{
                 width: 50%;
@@ -152,10 +153,12 @@ header {
             display: flex;
             justify-content: center;
             align-items: flex-end;
+            background-image: url("../Images/header_background.jpg");
+            background-size: cover;
 
             img{
                 height: 90%;
-                filter: drop-shadow(-5px -7.5px $darked_purple);
+                filter: drop-shadow(-2.5px -5px rgb(2, 10, 80));
             }
         }
     }
