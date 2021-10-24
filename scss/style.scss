@@ -110,7 +110,7 @@ header {
 
             h1{
                 font-size: $font_lg/1.33;
-                font-weight:400;
+                font-weight:500;
                 text-transform: capitalize;
                 
                 span{
@@ -254,6 +254,139 @@ section.services{
                     font-size:$font_lg / 4;
                 }
             }
+
+        }
+    }
+}
+
+
+// SECTION USERS
+section.users{
+    padding: $p2 0;
+    max-height: 70vh;
+    display: grid;
+    grid-template-columns: 10vw 30vw 10vw 40vw 1fr;
+    
+    // Image container
+    .section_users_image_container{
+        grid-column: 2/3;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+
+        & > img{
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            border-radius: $light_radius;   
+        }
+       
+
+        // div that contains pictures of some users
+        
+        .users_profiles_with_pictures
+      
+        {
+            background: $purple;
+            padding: $p1;
+            border-radius: $light_radius;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: absolute;
+            right:-25%;
+            top: 45%;
+            width: 15vw;
+
+            .pictures_container{
+                display: flex;
+                margin: $m1 0;
+                
+                .badge{
+                    background-color: white;
+                    height: 65px;
+                    width: 65px;
+                    border-radius: 50%;
+                    box-shadow: 1px 1px 5px 1px rgba(211, 211, 211, 0.301);
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    overflow: hidden;
+               
+
+                    &:nth-of-type(1){
+                        transform: translateX(40%);
+                        z-index: 3;
+                    }
+                    &:nth-of-type(2){
+                        transform: translateX(20%);
+                        z-index: 2;
+                    }
+                    &:nth-of-type(3){
+                        transform: translateX(0%);
+                        z-index: 1;
+                    }
+                    &:nth-of-type(4){
+                        transform: translateX(-40%);
+                    }
+                }
+
+                img{
+                    height: 100%;
+                    width: 100%;
+                    object-fit: cover;
+                    object-position: top;
+                }
+            }
+
+            h3{
+                color: white;
+            }
+
+        }
+    }
+    
+    // Text containet
+    .sections_users_text_container{
+        grid-column: 4/5;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        & > *{
+            margin: $m1/1.5 0;
+        }
+
+        span{
+            color: white;
+            background:linear-gradient(45deg,$purple,$light_purple);
+            border-radius: $medium_radius * 1.15;
+            padding: $p1 / 3 $p1/4;
+            width: 12.5%;
+            text-align: center;
+            font-size: $font_lg / 4;
+        }
+        
+        h2{
+            
+        }
+        
+        p{
+            
+        }
+        
+        a{
+            text-decoration: none;
+            color: white;
+            background:linear-gradient(65deg, $darked_purple, $purple);
+            border-radius:$strong_radius;
+            text-align: center;
+            min-width:15%;
+            width: 20%;
+            padding: $p1/2.25 $p1/1.25;
+            font-weight: 300;
+            font-size: $font_lg / 3.33;
 
         }
     }
