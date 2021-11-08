@@ -112,7 +112,7 @@ section.users .sections_users_text_container span { color: white; background: li
 
 section.users .sections_users_text_container a { text-decoration: none; color: white; background: linear-gradient(65deg, #4703d6, #6a1dff); border-radius: 50px; text-align: center; min-width: 15%; width: 20%; padding: 0.44444em 0.8em; font-weight: 300; font-size: 0.9009em; }
 
-section.clients_feedback { background-color: #fef7ff; padding: 1em 0; }
+section.clients_feedback { background-color: #fef7ff; padding: 1em 0 6em; }
 
 section.clients_feedback h1 { text-align: center; margin: 3em auto; position: relative; font-size: 3em; }
 
@@ -147,3 +147,63 @@ section.stats { height: 60vh; background-image: url("../Images/contact_backgroun
 section.stats h1 { color: white; font-size: 2.4em; text-align: center; }
 
 section.stats h1 span { display: block; }
+
+section.pricing { background-color: #fef7ff; padding: 1em 0; }
+
+section.pricing > h1 { text-align: center; margin: 2em auto; position: relative; font-size: 3em; }
+
+section.pricing > h1::before, section.pricing > h1::after { content: ""; position: absolute; width: 10vw; height: 2px; background-image: linear-gradient(35deg, #bb9eff, #3e3eff); }
+
+section.pricing > h1::before { bottom: -50%; right: 50%; transform: translateX(25%); }
+
+section.pricing > h1::after { bottom: -100%; left: 50%; transform: translateX(-25%); }
+
+section.pricing > p { margin: 0.66667em auto 3em; width: 60%; text-align: center; font-size: 1.09091em; font-weight: 500; line-height: 3.33vh; }
+
+section.pricing div.pricing_cards_container { width: 80%; margin: 9em auto 3em; display: flex; justify-content: space-around; min-height: 25vh; max-height: 75vh; }
+
+section.pricing div.pricing_cards_container .card_1 { border: 1px solid black; }
+
+section.pricing div.pricing_cards_container .card_1 button { background-color: #5402fa; color: white; }
+
+section.pricing div.pricing_cards_container .card_1 table tr:nth-of-type(3), section.pricing div.pricing_cards_container .card_1 table tr:nth-of-type(4) { opacity: .15 !important; }
+
+section.pricing div.pricing_cards_container .card_2 { background-color: #6a1dff; }
+
+section.pricing div.pricing_cards_container .card_2 .circle { background-image: linear-gradient(to right, transparent 50%, white 50%); }
+
+section.pricing div.pricing_cards_container .card_2 > *:not(button) { color: white; }
+
+section.pricing div.pricing_cards_container .card_2 button { color: #6a1dff; }
+
+section.pricing div.pricing_cards_container .card_2 table tr td { border-bottom: 1px solid white !important; }
+
+section.pricing div.pricing_cards_container .card_2 table tr:nth-of-type(4) { opacity: .15; }
+
+section.pricing div.pricing_cards_container .card_3 { border: 1px solid black; }
+
+section.pricing div.pricing_cards_container .card_3 .circle { background-color: #fff; }
+
+section.pricing div.pricing_cards_container .card_3 button { background-color: #5402fa; color: white; }
+
+section.pricing div.pricing_cards_container .pricing_cards { position: relative; border-radius: 15px; display: flex; flex-direction: column; justify-content: space-evenly; align-items: center; width: 25%; min-height: 55vh; padding: 2em; }
+
+section.pricing div.pricing_cards_container .pricing_cards .icon_container { height: 60px; width: 60px; position: absolute; top: 0%; transform: translateY(-50%); border-radius: 5px; background-color: #5402fa; display: flex; justify-content: center; align-items: center; }
+
+section.pricing div.pricing_cards_container .pricing_cards .icon_container .circle { height: 65%; width: 65%; border: 1px solid white; border-radius: 50px; }
+
+section.pricing div.pricing_cards_container .pricing_cards h1 { font-size: 2em; margin-top: 0.8em; }
+
+section.pricing div.pricing_cards_container .pricing_cards h1 span { display: block; font-size: 1.5em; text-align: center; }
+
+section.pricing div.pricing_cards_container .pricing_cards h1 span sup { font-size: 0.3em; }
+
+section.pricing div.pricing_cards_container .pricing_cards > p { font-weight: 600; text-transform: capitalize; margin: 1em 0; }
+
+section.pricing div.pricing_cards_container .pricing_cards button { width: 100%; border-radius: 50px; border: none; padding: 0.4em; font-size: 1.2em; }
+
+section.pricing div.pricing_cards_container .pricing_cards table { width: 85%; }
+
+section.pricing div.pricing_cards_container .pricing_cards table tr td { border-bottom: 1px solid black; padding: 0.66667em 0; text-transform: capitalize; word-spacing: .15vw; font-weight: 500; }
+
+section.pricing div.pricing_cards_container .pricing_cards table tr td i { font-size: 0.75em; margin: 0 .5vw; color: #6a1dff; }
