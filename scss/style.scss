@@ -510,3 +510,24 @@ section.clients_feedback {
     }
 
 }
+
+// SECTION STATS
+
+section.stats{
+    height:60vh;
+    background-image: url("../Images/contact_background.jpg");
+    background-size: cover;
+    background-position: center 0%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items:center;
+    
+    h1{
+        color: white;
+        font-size: $font_lg / 1.25;
+        text-align: center;
+        span{
+            display: block;
+        }
+    }
+}
