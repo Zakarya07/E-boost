@@ -13,13 +13,13 @@ header {
     height: 100vh;
 
     // all button of the header trannstion on hover
-    
-    button{
+
+    button {
         transition: all .1s linear;
     }
 
-    button:hover{
-        transform:scale(.975);
+    button:hover {
+        transform: scale(.975);
         cursor: pointer;
     }
 
@@ -27,7 +27,7 @@ header {
         height: 17.5vh;
         display: flex;
         justify-content: space-around;
-        background-color:$blanc_casse;
+        background-color: $blanc_casse;
 
         :is(.logo_container, .links_container, .login_button_container) {
             display: flex;
@@ -50,13 +50,15 @@ header {
 
                 li {
                     border-right: 3px solid $purple;
+
                     a {
                         margin: 0 1vw;
                         text-decoration: none;
                         color: black;
                         padding: 0 1em;
                     }
-                    &:last-child{
+
+                    &:last-child {
                         border: none;
                     }
 
@@ -66,88 +68,90 @@ header {
         }
 
         .login_button_container {
-            padding:0 1em;
-            button{
+            padding: 0 1em;
+
+            button {
                 background-image: linear-gradient(38deg, #5e1bfa, $light_purple);
                 color: rgb(224, 217, 175);
-                min-width:7.5vw;
+                min-width: 7.5vw;
                 padding: .5em 1em;
                 font-size: 1em;
                 border-radius: $light_radius;
                 font-weight: 600;
-                border:none;
+                border: none;
             }
         }
     }
 
-    section.header{
+    section.header {
         height: 82.5vh;
         display: grid;
         grid-template-columns: 5vw 1fr 1fr 5vw;
-        grid-template-rows:10% 10% 1fr 10% 10%;
-    
-        button{
-            border-radius:$strong_radius/1.1;
-            padding:$p1/2 $p1;
+        grid-template-rows: 10% 10% 1fr 10% 10%;
+
+        button {
+            border-radius: $strong_radius/1.1;
+            padding: $p1/2 $p1;
             border: none;
         }
 
-        .content_section{
+        .content_section {
             padding: $p3;
             grid-column: 2/3;
             grid-row: 2/5;
             display: flex;
             justify-content: space-between;
             flex-direction: column;
-            
 
-            & > button:first-of-type{
+
+            &>button:first-of-type {
                 width: 50%;
-                background-color: lighten($light_purple,10%);
+                background-color: lighten($light_purple, 10%);
                 color: rgb(255, 233, 191);
                 text-transform: uppercase;
             }
 
-            h1{
+            h1 {
                 font-size: $font_lg/1.33;
-                font-weight:500;
+                font-weight: 500;
                 text-transform: capitalize;
-                
-                span{
+
+                span {
                     display: block;
                     font-weight: 600;
-                    font-size:$font_lg / 1.5;
+                    font-size: $font_lg / 1.5;
                     color: $light_purple;
                 }
             }
 
-            p{
+            p {
                 font-size: $font_lg / 3.33;
-                line-height:2em;
+                line-height: 2em;
             }
-            
-            .btn_call_to_action_container{
+
+            .btn_call_to_action_container {
                 display: flex;
                 justify-content: space-around;
 
-                button{
+                button {
                     padding: $p1/1.25 $p1;
                     width: 40%;
                     font-weight: 600;
 
-                    &:first-of-type{
+                    &:first-of-type {
                         border: 2px solid $purple;
                         background-color: transparent;
                     }
-                    &:nth-of-type(2){
-                        background-color:$purple;
+
+                    &:nth-of-type(2) {
+                        background-color: $purple;
                         color: rgb(255, 232, 187);
                     }
                 }
             }
         }
-        
-        .image_section{
+
+        .image_section {
             grid-column: 3/4;
             grid-row: 1/6;
             display: flex;
@@ -156,7 +160,7 @@ header {
             background-image: url("../Images/header_background.jpg");
             background-size: cover;
 
-            img{
+            img {
                 height: 90%;
                 filter: drop-shadow(-2.5px -5px rgb(2, 10, 80));
             }
@@ -166,37 +170,37 @@ header {
 
 // SECTION SERVICES
 
-section.services{
+section.services {
     min-height: 50vh;
     text-align: center;
     position: relative;
     padding: $p1 0;
-    background-color:$blanc_casse;
+    background-color: $blanc_casse;
 
-    h1{
+    h1 {
         font-size: $font_lg;
         margin: $m1;
     }
 
-    hr{
-        height:2px;
+    hr {
+        height: 2px;
         width: 10%;
-        background-image:linear-gradient(35deg,#bb9eff,rgb(62, 62, 255));
+        background-image: linear-gradient(35deg, #bb9eff, rgb(62, 62, 255));
         position: absolute;
         border: none;
 
-        &:first-of-type{
-            right:48.5%;
+        &:first-of-type {
+            right: 48.5%;
             top: 23%;
         }
-        
-        &:nth-of-type(2){
-            left:48.5%;
+
+        &:nth-of-type(2) {
+            left: 48.5%;
             top: 26%;
         }
     }
 
-    & > p:first-of-type{
+    &>p:first-of-type {
         margin: $m1/1.5 auto $m3;
         width: 40%;
         text-align: center;
@@ -204,12 +208,13 @@ section.services{
         font-weight: 500;
     }
 
-    .card_container{
+    .card_container {
 
         display: grid;
-        grid-template-columns: 5vw repeat(3,1fr) 5vw;
+        grid-template-columns: 5vw repeat(3, 1fr) 5vw;
         column-gap: $m1;
-        .card{
+
+        .card {
             border-radius: $light_radius;
             padding: $p1 $p1;
             margin: 1vh 0;
@@ -217,41 +222,42 @@ section.services{
             flex-direction: column;
             align-items: flex-start;
             box-shadow: 1px 1px 5px 1px lightgray;
-            transition:all .25s linear;
+            transition: all .25s linear;
             background-color: white;
             min-height: 40vh;
             max-height: 45vh;
 
-            &:hover{
-                transform:scale(1.05);
+            &:hover {
+                transform: scale(1.05);
             }
 
-            &:hover h2, &:hover a{
+            &:hover h2,
+            &:hover a {
                 color: $purple;
             }
 
             // To place the first card element (the others follows the page flow that's why we don't specify the grid column for the 2nd and 3rd card)
-            &:first-of-type{
-                grid-column:2/3;
-            }
-        
-            h2{
-                margin:$m1 0 $m1/5;
+            &:first-of-type {
+                grid-column: 2/3;
             }
 
-            p{
+            h2 {
+                margin: $m1 0 $m1/5;
+            }
+
+            p {
                 text-align: left;
                 margin: $m1/2 0 $m2;
                 font-size: $font_lg / 3.33;
                 font-weight: 400;
             }
 
-            a{
+            a {
                 text-decoration: none;
                 font-weight: 500;
 
-                i{
-                    font-size:$font_lg / 4;
+                i {
+                    font-size: $font_lg / 4;
                 }
             }
 
@@ -261,33 +267,31 @@ section.services{
 
 
 // SECTION USERS
-section.users{
+section.users {
     padding: $p2 0;
     max-height: 70vh;
     display: grid;
     grid-template-columns: 10vw 30vw 10vw 40vw 1fr;
-    
+
     // Image container
-    .section_users_image_container{
+    .section_users_image_container {
         grid-column: 2/3;
         display: flex;
         justify-content: center;
         align-items: center;
         position: relative;
 
-        & > img{
+        &>img {
             height: 100%;
             width: 100%;
             object-fit: cover;
-            border-radius: $light_radius;   
+            border-radius: $light_radius;
         }
-       
+
 
         // div that contains pictures of some users
-        
-        .users_profiles_with_pictures
-      
-        {
+
+        .users_profiles_with_pictures {
             background: $purple;
             padding: $p1;
             border-radius: $light_radius;
@@ -295,15 +299,15 @@ section.users{
             flex-direction: column;
             align-items: center;
             position: absolute;
-            right:-25%;
+            right: -25%;
             top: 45%;
             width: 15vw;
 
-            .pictures_container{
+            .pictures_container {
                 display: flex;
                 margin: $m1 0;
-                
-                .badge{
+
+                .badge {
                     background-color: white;
                     height: 65px;
                     width: 65px;
@@ -313,26 +317,29 @@ section.users{
                     justify-content: center;
                     align-items: center;
                     overflow: hidden;
-               
 
-                    &:nth-of-type(1){
+
+                    &:nth-of-type(1) {
                         transform: translateX(40%);
                         z-index: 3;
                     }
-                    &:nth-of-type(2){
+
+                    &:nth-of-type(2) {
                         transform: translateX(20%);
                         z-index: 2;
                     }
-                    &:nth-of-type(3){
+
+                    &:nth-of-type(3) {
                         transform: translateX(0%);
                         z-index: 1;
                     }
-                    &:nth-of-type(4){
+
+                    &:nth-of-type(4) {
                         transform: translateX(-40%);
                     }
                 }
 
-                img{
+                img {
                     height: 100%;
                     width: 100%;
                     object-fit: cover;
@@ -340,49 +347,45 @@ section.users{
                 }
             }
 
-            h3{
+            h3 {
                 color: white;
             }
 
         }
     }
-    
+
     // Text containet
-    .sections_users_text_container{
+    .sections_users_text_container {
         grid-column: 4/5;
         display: flex;
         flex-direction: column;
         justify-content: center;
 
-        & > *{
+        &>* {
             margin: $m1/1.5 0;
         }
 
-        span{
+        span {
             color: white;
-            background:linear-gradient(45deg,$purple,$light_purple);
+            background: linear-gradient(45deg, $purple, $light_purple);
             border-radius: $medium_radius * 1.15;
             padding: $p1 / 3 $p1/4;
             width: 12.5%;
             text-align: center;
             font-size: $font_lg / 4;
         }
-        
-        h2{
-            
-        }
-        
-        p{
-            
-        }
-        
-        a{
+
+        h2 {}
+
+        p {}
+
+        a {
             text-decoration: none;
             color: white;
-            background:linear-gradient(65deg, $darked_purple, $purple);
-            border-radius:$strong_radius;
+            background: linear-gradient(65deg, $darked_purple, $purple);
+            border-radius: $strong_radius;
             text-align: center;
-            min-width:15%;
+            min-width: 15%;
             width: 20%;
             padding: $p1/2.25 $p1/1.25;
             font-weight: 300;
@@ -390,4 +393,120 @@ section.users{
 
         }
     }
+}
+
+
+// SECTION CLIENTS SAYS
+section.clients_feedback {
+    background-color: $blanc_casse;
+    padding: $p1 0;
+
+    h1 {
+        text-align: center;
+        margin: $m3 auto;
+        position: relative;
+        font-size: $font_lg;
+
+        &::before,
+        &::after {
+            content: "";
+            position: absolute;
+            width: 10vw;
+            height: 2px;
+            background-image: linear-gradient(35deg, #bb9eff, #3e3eff);
+        }
+
+        &::before {
+            bottom: -50%;
+            right: 50%;
+            transform: translateX(25%);
+        }
+
+        &::after {
+            bottom: -100%;
+            left: 50%;
+            transform: translateX(-25%);
+        }
+    }
+
+
+    &>p {
+        margin: $m1/1.5 auto $m3;
+        width: 60%;
+        text-align: center;
+        font-size: $font_lg / 2.75;
+        font-weight: 400;
+        line-height: 3.33vh;
+    }
+   
+
+    .container_clients_returns{
+        width: 90vw;
+        margin: auto;
+        display:grid;
+        grid-template-columns: 1fr 2vw 1fr;
+        column-gap: 1vw;
+
+        div.clients_returns{
+            
+            border: 1px solid black;
+            border-radius: $medium_radius / 1.25;
+            min-height: 20vh;
+            place-items: center;
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            column-gap: 1vw;
+            padding: 0 $p1/1.5 0 0 ;
+
+            &:first-of-type{
+                grid-column: 1/2;
+            }
+
+            &:nth-of-type(2){
+                grid-column: 3/4;
+            }
+
+            .clients_profile{
+
+                padding: $p1 $p1 $p1 0;
+                position: relative;
+
+                .img_container{
+                    width: 60px;
+                    height: 60px;
+                    border-radius: 50%;
+                    display: flex;
+                    justify-content: center;
+                    align-items:center;
+                    overflow: hidden;
+    
+                    img{
+                        object-fit: cover;
+                        height: 100%;
+                        width: 100%;
+                    }
+                }
+
+                &::after{
+                    content: "";
+                    position: absolute;
+                    height: 100%;
+                    width: 1px;
+                    background-color: black;
+                    right:0;
+                    top: 0;
+
+                }
+            }
+
+            // description of the clients
+            p{
+                grid-column: 2/4;
+                line-height:3.5vh;
+                font-size: $font_lg / 3;
+            }
+
+        }
+    }
+
 }

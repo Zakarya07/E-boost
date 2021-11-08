@@ -111,3 +111,33 @@ section.users .sections_users_text_container > * { margin: 0.66667em 0; }
 section.users .sections_users_text_container span { color: white; background: linear-gradient(45deg, #6a1dff, #5402fa); border-radius: 17.25px; padding: 0.33333em 0.25em; width: 12.5%; text-align: center; font-size: 0.75em; }
 
 section.users .sections_users_text_container a { text-decoration: none; color: white; background: linear-gradient(65deg, #4703d6, #6a1dff); border-radius: 50px; text-align: center; min-width: 15%; width: 20%; padding: 0.44444em 0.8em; font-weight: 300; font-size: 0.9009em; }
+
+section.clients_feedback { background-color: #fef7ff; padding: 1em 0; }
+
+section.clients_feedback h1 { text-align: center; margin: 3em auto; position: relative; font-size: 3em; }
+
+section.clients_feedback h1::before, section.clients_feedback h1::after { content: ""; position: absolute; width: 10vw; height: 2px; background-image: linear-gradient(35deg, #bb9eff, #3e3eff); }
+
+section.clients_feedback h1::before { bottom: -50%; right: 50%; transform: translateX(25%); }
+
+section.clients_feedback h1::after { bottom: -100%; left: 50%; transform: translateX(-25%); }
+
+section.clients_feedback > p { margin: 0.66667em auto 3em; width: 60%; text-align: center; font-size: 1.09091em; font-weight: 400; line-height: 3.33vh; }
+
+section.clients_feedback .container_clients_returns { width: 90vw; margin: auto; display: grid; grid-template-columns: 1fr 2vw 1fr; column-gap: 1vw; }
+
+section.clients_feedback .container_clients_returns div.clients_returns { border: 1px solid black; border-radius: 12px; min-height: 20vh; place-items: center; display: grid; grid-template-columns: repeat(3, 1fr); column-gap: 1vw; padding: 0 0.66667em 0 0; }
+
+section.clients_feedback .container_clients_returns div.clients_returns:first-of-type { grid-column: 1/2; }
+
+section.clients_feedback .container_clients_returns div.clients_returns:nth-of-type(2) { grid-column: 3/4; }
+
+section.clients_feedback .container_clients_returns div.clients_returns .clients_profile { padding: 1em 1em 1em 0; position: relative; }
+
+section.clients_feedback .container_clients_returns div.clients_returns .clients_profile .img_container { width: 60px; height: 60px; border-radius: 50%; display: flex; justify-content: center; align-items: center; overflow: hidden; }
+
+section.clients_feedback .container_clients_returns div.clients_returns .clients_profile .img_container img { object-fit: cover; height: 100%; width: 100%; }
+
+section.clients_feedback .container_clients_returns div.clients_returns .clients_profile::after { content: ""; position: absolute; height: 100%; width: 1px; background-color: black; right: 0; top: 0; }
+
+section.clients_feedback .container_clients_returns div.clients_returns p { grid-column: 2/4; line-height: 3.5vh; font-size: 1em; }
