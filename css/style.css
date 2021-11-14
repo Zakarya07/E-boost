@@ -207,3 +207,9 @@ section.pricing div.pricing_cards_container .pricing_cards table { width: 85%; }
 section.pricing div.pricing_cards_container .pricing_cards table tr td { border-bottom: 1px solid black; padding: 0.66667em 0; text-transform: capitalize; word-spacing: .15vw; font-weight: 500; }
 
 section.pricing div.pricing_cards_container .pricing_cards table tr td i { font-size: 0.75em; margin: 0 .5vw; color: #6a1dff; }
+
+section.partners { height: 33vh; }
+
+section.partners .container { height: 100%; display: flex; justify-content: space-evenly; align-items: center; }
+
+section.partners .container i { font-size: 4em; }

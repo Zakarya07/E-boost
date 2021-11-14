@@ -624,10 +624,10 @@ section.pricing {
         }
 
         // second card (card 2) specific styles
-        .card_3{
+        .card_3 {
             border: 1px solid black;
 
-            .circle{
+            .circle {
                 background-color: #fff;
             }
 
@@ -718,6 +718,22 @@ section.pricing {
                     }
                 }
             }
+        }
+    }
+}
+
+// SECTION PARTNERS
+section.partners {
+    height: 33vh;
+
+    .container {
+        height: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+
+        i {
+            font-size: $font_xl;
         }
     }
 }
