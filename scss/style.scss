@@ -162,7 +162,6 @@ header {
 
             img {
                 height: 90%;
-                filter: drop-shadow(-2.5px -5px rgb(2, 10, 80));
             }
         }
     }
@@ -593,7 +592,7 @@ section.pricing {
 
             table tr:nth-of-type(3),
             table tr:nth-of-type(4) {
-                opacity: .15 !important;
+                opacity: .33 !important;
             }
         }
 
@@ -615,10 +614,15 @@ section.pricing {
 
             table tr td {
                 border-bottom: 1px solid white !important;
+
+                i{
+                    // to make check icons visible because originally it herits from general styles of cards (that is purple)
+                    color: white !important;
+                }
             }
 
             table tr:nth-of-type(4) {
-                opacity: .15;
+                opacity: .33;
             }
 
         }
@@ -697,6 +701,12 @@ section.pricing {
                 border: none;
                 padding: $p1 / 2.5;
                 font-size: $font_lg / 2.5;
+                transition: all .25s linear;
+
+                &:hover{
+                    transform: scale(0.95);
+                    cursor: pointer;
+                }
             }
 
             table {

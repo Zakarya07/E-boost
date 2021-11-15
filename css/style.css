@@ -53,7 +53,7 @@ header section.header .content_section .btn_call_to_action_container button:nth-
 
 header section.header .image_section { grid-column: 3/4; grid-row: 1/6; display: flex; justify-content: center; align-items: flex-end; background-image: url("../Images/header_background.jpg"); background-size: cover; }
 
-header section.header .image_section img { height: 90%; filter: drop-shadow(-2.5px -5px #020a50); }
+header section.header .image_section img { height: 90%; }
 
 section.services { min-height: 50vh; text-align: center; position: relative; padding: 1em 0; background-color: #fef7ff; }
 
@@ -171,7 +171,7 @@ section.pricing div.pricing_cards_container .card_1 { border: 1px solid black; }
 
 section.pricing div.pricing_cards_container .card_1 button { background-color: #5402fa; color: white; }
 
-section.pricing div.pricing_cards_container .card_1 table tr:nth-of-type(3), section.pricing div.pricing_cards_container .card_1 table tr:nth-of-type(4) { opacity: .15 !important; }
+section.pricing div.pricing_cards_container .card_1 table tr:nth-of-type(3), section.pricing div.pricing_cards_container .card_1 table tr:nth-of-type(4) { opacity: .33 !important; }
 
 section.pricing div.pricing_cards_container .card_2 { background-color: #6a1dff; }
 
@@ -183,7 +183,9 @@ section.pricing div.pricing_cards_container .card_2 button { color: #6a1dff; }
 
 section.pricing div.pricing_cards_container .card_2 table tr td { border-bottom: 1px solid white !important; }
 
-section.pricing div.pricing_cards_container .card_2 table tr:nth-of-type(4) { opacity: .15; }
+section.pricing div.pricing_cards_container .card_2 table tr td i { color: white !important; }
+
+section.pricing div.pricing_cards_container .card_2 table tr:nth-of-type(4) { opacity: .33; }
 
 section.pricing div.pricing_cards_container .card_3 { border: 1px solid black; }
 
@@ -205,7 +207,9 @@ section.pricing div.pricing_cards_container .pricing_cards h1 span sup { font-si
 
 section.pricing div.pricing_cards_container .pricing_cards > p { font-weight: 600; text-transform: capitalize; margin: 1em 0; }
 
-section.pricing div.pricing_cards_container .pricing_cards button { width: 100%; border-radius: 50px; border: none; padding: 0.4em; font-size: 1.2em; }
+section.pricing div.pricing_cards_container .pricing_cards button { width: 100%; border-radius: 50px; border: none; padding: 0.4em; font-size: 1.2em; transition: all .25s linear; }
+
+section.pricing div.pricing_cards_container .pricing_cards button:hover { transform: scale(0.95); cursor: pointer; }
 
 section.pricing div.pricing_cards_container .pricing_cards table { width: 85%; }
 
