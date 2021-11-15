@@ -1,3 +1,8 @@
+@keyframes button_outline { 0% { outline-color: white;
+    outline-offset: 5px; }
+  100% { outline-color: #5402fa;
+    outline-offset: -5px; } }
+
 * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Poppins', sans-serif; }
 
 header { height: 100vh; }
@@ -213,3 +218,37 @@ section.partners { height: 33vh; }
 section.partners .container { height: 100%; display: flex; justify-content: space-evenly; align-items: center; }
 
 section.partners .container i { font-size: 4em; }
+
+section.contact { min-height: 70vh; background-image: url("../Images/contact_background.jpg"); background-size: cover; background-position: center 30%; padding: 1em; }
+
+section.contact > h1 { text-align: center; margin: 1em auto 2em; position: relative; font-size: 3em; text-transform: capitalize; color: white; }
+
+section.contact > h1::before, section.contact > h1::after { content: ""; position: absolute; width: 7.5vw; height: 2px; background-color: white; }
+
+section.contact > h1::before { bottom: -25%; right: 50%; transform: translateX(25%); }
+
+section.contact > h1::after { bottom: -50%; left: 50%; transform: translateX(-25%); }
+
+section.contact > p { margin: 0.66667em auto 3em; width: 60%; text-align: center; font-size: 1.09091em; font-weight: 500; line-height: 3.33vh; color: white; }
+
+section.contact > p::first-letter { text-transform: uppercase; }
+
+section.contact form { width: 80%; margin: 1em auto; display: grid; grid-template-columns: repeat(3, 1fr); column-gap: 2vw; min-height: 40vh; }
+
+section.contact form .inputs_container input, section.contact form .textarea_container textarea { border: 2px solid whitesmoke; background-color: transparent; color: white; width: 100%; transition: all .2s linear; opacity: 0.6; }
+
+section.contact form .inputs_container input::placeholder, section.contact form .textarea_container textarea::placeholder { text-transform: capitalize; color: white; }
+
+section.contact form .inputs_container input:focus, section.contact form .textarea_container textarea:focus { outline: none; transform: scale(1.033); opacity: 1; }
+
+section.contact form .inputs_container { grid-column: 1/2; padding: 1em; display: flex; flex-direction: column; justify-content: space-between; }
+
+section.contact form .inputs_container input { padding: 0.8em; border-radius: 7.5px; margin-bottom: 1em; }
+
+section.contact form .inputs_container input[type="submit"] { width: 50% !important; background-color: #fff; text-transform: capitalize; font-weight: 600; font-size: 0.9009em; color: #5402fa; padding: 1em 0; opacity: 1; outline: 1px solid transparent; }
+
+section.contact form .inputs_container input[type="submit"]:hover { animation: button_outline .99s alternate linear infinite; }
+
+section.contact form .textarea_container { grid-column: 2/4; padding: 1em; }
+
+section.contact form .textarea_container textarea { height: 100%; padding: 1em 2em; border-radius: 15px; font-size: 1em; }

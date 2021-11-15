@@ -24,3 +24,18 @@ $m3:3em;
 $font_lg:3em;
 $font_xl:4em;
 $font_xxl:5em;
+
+
+// keyframes
+
+
+@keyframes button_outline{
+    0%{
+        outline-color: white;
+        outline-offset: 5px;
+    }
+    100%{
+        outline-color: $light_purple;
+        outline-offset: -5px;
+    }
+}

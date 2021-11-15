@@ -737,3 +737,136 @@ section.partners {
         }
     }
 }
+
+// SECTION CONTACT FORM
+section.contact{
+    min-height: 70vh;
+    background-image: url("../Images/contact_background.jpg");
+    background-size: cover;
+    background-position: center 30%;
+    padding: $p1;
+
+    &>h1 {
+        text-align: center;
+        margin: $m1 auto $m2;
+        position: relative;
+        font-size: $font_lg;
+        text-transform: capitalize;
+        color: white;
+
+        &::before,
+        &::after {
+            content: "";
+            position: absolute;
+            width: 7.5vw;
+            height: 2px;
+            background-color: white;
+        }
+
+        &::before {
+            bottom: -25%;
+            right: 50%;
+            transform: translateX(25%);
+        }
+
+        &::after {
+            bottom: -50%;
+            left: 50%;
+            transform: translateX(-25%);
+        }
+    }
+
+    &>p {
+        margin: $m1/1.5 auto $m3;
+        width: 60%;
+        text-align: center;
+        font-size: $font_lg / 2.75;
+        font-weight: 500;
+        line-height: 3.33vh;
+        color: white;
+
+        &::first-letter{
+            text-transform: uppercase;
+        }
+    }
+
+    form{
+        width: 80%;
+        margin: $m1 auto;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        column-gap: 2vw;
+        min-height: 40vh;
+
+        // styles that both input fields and textarea share (to avoid repetition) 
+        .inputs_container input, .textarea_container textarea{
+            border:2px solid whitesmoke;
+            background-color: transparent;
+            color: white;
+            width: 100%;
+            transition: all .2s linear;
+            opacity: 0.6;
+
+
+
+            &::placeholder{
+                text-transform: capitalize;
+                color: white;
+            }
+
+
+            &:focus{
+                outline: none;
+                transform: scale(1.033);
+                opacity: 1;
+            }
+        }
+
+        .inputs_container{
+            grid-column: 1/2;
+            padding: $p1;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            input{
+                padding: $p1 / 1.25;
+                border-radius: $light_radius * 1.5;
+                margin-bottom: $m1;
+
+
+                &[type="submit"]{
+                    width: 50% !important;
+                    background-color: #fff;
+                    text-transform: capitalize;
+                    font-weight: 600;
+                    font-size:$font_lg / 3.33;
+                    color: $light_purple;
+                    padding: $p1 0;
+                    // the button have to be visible all the time, not like the input (type texts)
+                    opacity: 1;
+                    // animation call on hover
+                    outline: 1px solid transparent;
+
+                    &:hover{
+                        animation: button_outline .99s alternate linear infinite;
+                    }
+
+                }
+
+            }
+        }
+        
+        .textarea_container{
+            grid-column: 2/4;
+            padding: $p1;
+            
+            textarea{
+                height: 100%;
+                padding: $p1 $p2;
+                border-radius: $medium_radius;
+                font-size: $font_lg / 3;
+            }
+        }
+    }
+}
