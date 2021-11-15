@@ -252,3 +252,43 @@ section.contact form .inputs_container input[type="submit"]:hover { animation: b
 section.contact form .textarea_container { grid-column: 2/4; padding: 1em; }
 
 section.contact form .textarea_container textarea { height: 100%; padding: 1em 2em; border-radius: 15px; font-size: 1em; }
+
+footer { height: 30vh; display: flex; flex-direction: column; align-items: center; justify-content: space-between; }
+
+footer .main_container { width: 90%; display: grid; grid-template-columns: repeat(4, 1fr); margin-top: 2em; }
+
+footer .main_container .logo_container { grid-column: 1/2; display: flex; flex-direction: column; align-items: center; padding: 1em 0.25em; }
+
+footer .main_container .logo_container img { width: 80%; filter: brightness(5%) blur(0.5px); }
+
+footer .main_container .logo_container p { font-weight: 600; width: 85%; }
+
+footer .main_container .links_container { grid-column: 2/3; display: flex; justify-content: space-around; padding: 1em; }
+
+footer .main_container .links_container div { display: flex; flex-direction: column; }
+
+footer .main_container .links_container div p { font-weight: 700; margin-bottom: 1em; }
+
+footer .main_container .links_container div a { text-decoration: none; font-size: 0.9009em; font-weight: 500; margin: 0.33333em 0; color: black; text-transform: capitalize; }
+
+footer .main_container .subscription_container { grid-column: 3/5; display: flex; flex-direction: column; align-items: center; justify-content: space-evenly; height: 75%; }
+
+footer .main_container .subscription_container h2 { font-weight: 500; font-size: 2em; text-transform: capitalize; }
+
+footer .main_container .subscription_container h2 span { font-weight: bold; }
+
+footer .main_container .subscription_container .subscription { display: flex; width: 80%; }
+
+footer .main_container .subscription_container .subscription input[type="search"], footer .main_container .subscription_container .subscription input[type="submit"] { padding: 1.33333em; }
+
+footer .main_container .subscription_container .subscription input[type="search"]:focus, footer .main_container .subscription_container .subscription input[type="submit"]:focus { outline: none; }
+
+footer .main_container .subscription_container .subscription input[type="search"] { width: 75%; border: 3px solid #6a1dff; border-radius: 15px 0 0 15px; }
+
+footer .main_container .subscription_container .subscription input[type="submit"] { width: 25%; background: #6a1dff; color: white; border: none; border-radius: 0 15px 15px 0; transition: all .15s linear; }
+
+footer .main_container .subscription_container .subscription input[type="submit"]:hover { background: #4703d6; color: #d3ffc8; }
+
+footer .copyright_container { margin: 2em 0; padding-bottom: 2em; }
+
+footer .copyright_container h3 { font-weight: 400; font-size: 1em; }

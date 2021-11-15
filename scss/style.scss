@@ -870,3 +870,123 @@ section.contact{
         }
     }
 }
+
+// FOOTER
+footer{
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+    .main_container{
+        width: 90%;
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        margin-top: $m2;
+
+        .logo_container{
+            grid-column: 1/2;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: $p1 $p1/4;
+
+            img{
+                width: 80%;
+                filter:brightness(5%) blur(.5px);
+                
+            }
+            p{
+                font-weight: 600;
+                width: 85%;
+            }
+        }
+        .links_container{
+            grid-column:2/3;
+            display: flex;
+            justify-content: space-around;
+            padding: $p1;
+
+            div{
+                display: flex;
+                flex-direction: column;
+
+                p{
+                    font-weight: 700;
+                    margin-bottom: $m1;
+                }
+
+                a{
+                    text-decoration: none;
+                    font-size: $font_lg /3.33;
+                    font-weight: 500;
+                    margin: $m1/3 0;
+                    color:black;
+                    text-transform: capitalize;
+                }
+            }
+        }
+        .subscription_container{
+            grid-column: 3/5;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-evenly;
+            height: 75%;
+
+            h2{
+                font-weight: 500;
+                font-size: $font_lg / 1.5;
+                text-transform: capitalize;
+                span{
+                    font-weight: bold;
+                }
+            }
+
+            .subscription{
+                display: flex;
+                width: 80%;
+
+                input[type="search"],input[type="submit"]{
+                    padding: $p2 / 1.5;
+
+                    &:focus{
+                        outline: none;
+                    }
+                }
+
+                input[type="search"]{
+                    width: 75%;
+                    border: 3px solid $purple;
+                    border-radius: $medium_radius 0 0 $medium_radius;
+                }
+                
+                input[type="submit"]{
+                    width: 25%;
+                    background:$purple;
+                    color: white;
+                    border: none;
+                    border-radius: 0 $medium_radius $medium_radius 0;
+                    transition: all .15s linear;
+
+                    &:hover{
+                        background: $darked_purple;
+                        color: rgb(211, 255, 200);
+                    }
+                }
+            }
+
+        }
+    }
+
+    .copyright_container{
+        margin: $m2 0;
+        padding-bottom: $p2;
+
+        h3{
+            font-weight: 400;
+            font-size: $font_lg / 3;
+        }
+    }
+}
